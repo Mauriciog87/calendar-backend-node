@@ -4,12 +4,10 @@ require('dotenv').config();
 
 const app = express();
 
-// app.get('/', (request, response) => {
-//     response.json({
-//         ok: true
-//     });
-// });
+//Routes
+app.use('/api/auth', require('./routes/auth'));
 
+//Public folder
 app.use(express.static('public'));
 
 app.listen(process.env.PORT, () => {
