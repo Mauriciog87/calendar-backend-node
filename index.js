@@ -1,8 +1,12 @@
 const express = require('express');
+const { dbConnection } = require('./database/config');
 
 require('dotenv').config();
 
 const app = express();
+
+//database
+dbConnection();
 
 // read and parse body
 app.use(express.json());
