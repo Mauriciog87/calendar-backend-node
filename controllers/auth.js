@@ -89,7 +89,9 @@ const renewToken = async(request, response = express.response) => {
 
     response.json({
         ok: true,
-        token
+        token,
+        uid,
+        name
     });
 }
 
