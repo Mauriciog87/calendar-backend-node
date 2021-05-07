@@ -8,7 +8,7 @@ const dbConnection = async() => {
             useCreateIndex: true
         });
 
-        console.log('db online');
+        console.log('DB Online');
     }
     catch (error) {
         console.log(error);
